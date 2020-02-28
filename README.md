@@ -19,4 +19,7 @@ The website has a very clean, attractive and easy to use interface.
 
 # How to run
 - You must have aws rekognition ID and key.
-- python
+- python open.py
+- python city1.py
+- python city2.py
+- python city3.py
