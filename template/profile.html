@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>|| PROFILE ||</title>
+    <!-- <link rel="stylesheet" type="text/css" href="profileStyle.css"/> -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:500&display=swap" rel="stylesheet">
+    <style>
+
+
+    /* The sidebar menu */
+
+    body{
+      background-color: black;
+    }
+
+    .sidenav {
+      height: 100%; /* Full-height: remove this if you want "auto" height */
+      width: 550px; /* Set the width of the sidebar */
+      position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+      z-index: -1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+      background-color: black; /* Black */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    /* .sidenav a{
+      display: block;
+      text-decoration: none;
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: rgb(251, 242, 233);
+    } */
+
+    .main {
+      margin-left: 552px;
+      /* padding: 0px 10px; */
+      background-color: 	rgb(251, 242, 233);
+    }
+
+    @media screen and (max-height: 450sssspx) {
+      .sidenav {padding-top: 5px;}
+      .sidenav a {font-size: 18px;}
+    }
+    .table1{
+      width: 100%;
+      height: 40%;
+    }
+    .table1 td{
+      font-size: 17px;
+      text-align: center;
+      background-color: 	rgb(251, 242, 233);
+    }
+    .table1 th{
+      font-size: 50px;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      background-color: #333333;
+    }
+
+    .table3{
+      width: 100%;
+      height: 40%;
+    }
+
+    input[type="button"]{
+      width: 100%;
+      height: 100%;
+      border: 10;
+      border-radius: 5px;
+      position: static;
+      background-color: #333333;
+      color: white;
+    }
+    input[type="button"]:hover{
+      transform: scale(1.01);
+    }
+    .trans_head{
+      position: fixed;
+      background-color:#333333;
+      width:877px;
+    }
+
+    .table2{
+      width: 100%;
+    }
+    .table2 th{
+      width: 1010px;
+      border: 1px solid black;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: #333333;
+      color: white;
+    }
+    .table2 td{
+      border-bottom:1px solid black;
+      text-align: center;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    .table2 thead{position: absolute;}
+    .table2 tbody,.table2 thead{display: block;}
+
+    .table2 tbody{
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    .overlay {
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      bottom: 0;
+      left: 0;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.9);
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+
+    .overlay-content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+      color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay {
+        overflow-y: auto;
+      }
+
+      .overlay a {
+        font-size: 20px
+      }
+
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeVAH()">&times;</a>
+    <div class="overlay-content">
+      <form action="./car" method="post">
+      <input type="text" placeholder="Vahicale Number" name="num" value="">
+      <input type="submit" name="" value="SEARCH">
+      </form>
+    </div>
+    </div>
+    <div id="myNav1" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeFIND()">&times;</a>
+    <div class="overlay-content">
+      <form action="./sus" method="post">
+
+      <input type="text" placeholder="Path of Image" name="path" value="">
+      <input type="submit" name="" value="FIND">
+      </form>
+    </div>
+    </div>
+    <div class="sidenav">
+
+        <table class="table1">
+        <tr>
+          <th>Instant Police Colab</th>
+        </tr>
+        <tr>
+          <td>Username: INDIA</td>
+        </tr>
+        <tr>
+          <td>::WELCOME::</td>
+        </tr>
+        </table>
+          <table class="table3">
+          <tr>
+            <td><input type="button" name="" value="SEARCH VEHICAL" style="font-size: 15px;" onclick="openVAH()"></td>
+            <td><input type="button" name="" value="FIND SUSPECT" style="font-size: 15px;" onclick="openFIND()"></td>
+          </tr>
+          <tr>
+            <td colspan="2"><input type="button" name="" value="CONTACT DEVELOPER"></td>
+          </tr>
+          </table>
+    </div>
+<!-- Page content -->
+
+    <div class="main">
+        <table class="table2">
+
+          <tr>
+            <th colspan="">WARNINGS</th>
+          </tr>
+          {% for i in data.items()%}
+          {% if 1 in i %}
+          <tr>
+            <td colspan="">{{"Found Vehicle "+i[0][-1]+" at latitude="+i[0][0]+" longitude="+i[0][1]+" in city "+i[0][3]+" of region "+i[0][2]}}</td>
+          </tr>
+
+          {% elif 2 in i %}
+          <tr>
+            <td colspan="">{{"Detected Violence at latitude="+i[0][0]+" longitude="+i[0][1]+" in city "+i[0][3]+" of region "+i[0][2]+" on "+i[0][-2]+" at "+i[0][-1]}}</td>
+          </tr>
+          {% else %}
+          <tr>
+            <td colspan="">{{"Found Suspect "+i[0][0]+" at latitude="+i[0][1]+" longitude="+i[0][0]+" in city "+i[0][-2]+" of region "+i[0][-3]+" on date "+i[0][-1]}}</td>
+          </tr>
+          {% endif %}
+
+          {% endfor %}
+
+
+      </table>
+    </div>
+<script>
+    function openVAH() {
+      document.getElementById("myNav").style.height = "85%";
+      document.getElementById("myNav").style.width = "36%";
+    }
+    function closeVAH() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    function openFIND() {
+      document.getElementById("myNav1").style.height = "85%";
+      document.getElementById("myNav1").style.width = "36%";
+    }
+    function closeFIND() {
+      document.getElementById("myNav1").style.height = "0%";
+    }
+
+</script>
+
+  </body>
+</html>

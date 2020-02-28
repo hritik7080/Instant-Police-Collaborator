@@ -1,0 +1,1 @@
+1. First run open.py, that will lauch our localhost website.

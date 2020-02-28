@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    function myFunction() {
+  var x = document.getElementById("myFile").value;
+  document.getElementById("path").innerHTML = x;
+}
+</script>
+<form action="http://localhost:5000/car" method="post">
+    <label>CAR:</label>
+    <input name='num' type="text">
+    <input type="submit">
+</form>
+
+<form action="http://localhost:5000/suspect" method="post">
+    Select a file to upload:
+<input type="file" id="myFile" size="50">
+
+<p>Click the button below do the display the file path of the file upload button above (you must select a file first).</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+</form>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myFile").value;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
+
+
+</body>
+</html>

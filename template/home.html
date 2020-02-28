@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation Text</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='homeStyle.css') }}">
+  </head>
+  <style>
+  .btn{
+    width: 82%;
+  }
+</style>
+  <body>
+    <div class="topfrme">
+    <div class="title">
+      <span class="text1">Welcome</span>
+      <span class="text2">Human</span>
+    </div>
+    </div>
+
+    <div class="bottomfrme">
+      <div class="container">
+        <p>AI saves
+          <span class="typed-text"></span>
+          <span class="cursor">&nbsp;</span>
+        </p>
+      </div>
+      <div class="box">
+        <table class="login-box">
+
+          <tr>
+            <td class="testbox">
+              <form action="./log" method="post">
+            <input class="btn" type="text" placeholder="Username" name="us" value="">
+            </td>
+            <td class="testbox">
+            <input class="btn" type="password" placeholder="Password" name="ps" value="">
+            </td>
+
+            <td class="testbox">
+            <input class="btn" class="submit" type="submit" name="" value="Sign In">
+             </form>
+          </td>
+
+          </tr>
+          </table>
+        </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+  </body>
+</html>

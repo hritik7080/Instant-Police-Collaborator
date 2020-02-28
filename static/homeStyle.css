@@ -1,0 +1,118 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+.topfrme{
+  background: url("power.gif");
+  height: 800px;
+  width:100%;
+  align-items: center;
+}
+.title{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: auto;
+
+}
+.title span{
+  text-transform: uppercase;
+  display: block;
+}
+.text1{
+  color: white;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 12px;
+  margin-bottom: 10px;
+  background: black;
+  position: relative;
+  animation: text 3s 1;
+}
+.text2{
+  font-size: 40px;
+  color: white;
+}
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+.bottomfrme{
+  background: url("earth.gif");
+  height: 800px;
+  width:100%;
+  align-items: center;
+  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.5);
+}
+.container {
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+.login-box{
+  padding: 5px;
+}
+
+.btn{
+  width: 100%;
+  background: none;
+  border: 0px;
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  display: inline;
+}
+.box{
+  width: 600px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 23%;
+}
